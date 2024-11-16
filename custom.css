@@ -121,6 +121,10 @@
     margin-top: 3px !important;
 }
 
+.services-group.px-1 {
+    background-color: #432c21 !important;
+}
+
 .service-block {
     border-radius: 15px !important;
     background-color: rgb(var(--color-900) / .3) !important;
