@@ -1,2 +1,2 @@
 
-![Alt text](./demo-png?raw=true "Demo")
+![Alt text](demo.png?raw=true "Demo")
