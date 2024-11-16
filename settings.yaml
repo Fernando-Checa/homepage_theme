@@ -1,0 +1,226 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/en/configs/settings
+
+providers:
+  openweathermap: xxxxxxxxxxxxxxxxxxxx
+  
+
+title: homepage
+favicon: /icons/favicon-32x32.png
+
+target: _self # Possible options include _blank, _self, and _top
+
+headerStyle: clean
+disableCollapse: false
+#hideInternetSearch: true
+fivecolumns: true
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+  provider: google
+  fivecolumns: true
+
+
+#useEqualHeights: true
+
+layout:  
+    SERVER:
+      tab: HOMELAB
+      icon: si-clevercloud-#000000
+      #header: false
+      #fivecolumns: true 
+      style: row
+      columns: 5
+      useEqualHeights: true
+    VPS:  
+      tab: HOMELAB
+      icon: si-clevercloud-#000000
+      #header: false
+      #fivecolumns: true 
+      style: row
+      columns: 4
+      useEqualHeights: true
+    BACKUP:
+      tab: HOMELAB
+      #icon: si-icloud-#000
+      icon: /icons/cloud.svg
+      #header: false
+      style: row
+      columns: 5
+      useEqualHeights: true
+    OTHER:
+      icon: si-broadcom-#000000
+      tab: HOMELAB
+      #header: false
+      style: row
+      columns: 5
+      useEqualHeights: true
+    NETWORK:
+      tab: NETWORK / DB
+      #header: false
+      icon: /icons/net.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+      #headerStyle: clean
+    DATABASE:
+      tab: NETWORK / DB
+      #header: false
+      icon: /icons/db.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+      #headerStyle: clean
+    WEB: 
+      tab: NETWORK / DB
+      #header: false
+      icon: /icons/db.png
+      style: row
+      columns: 4
+      useEqualHeights: true
+      #headerStyle: clean
+    APPS:
+      tab: APPS
+      icon: /icons/ai.png
+      style: row
+      columns: 5
+    AI:
+      tab: APPS
+      icon: /icons/ai.png
+      style: row
+      columns: 5
+    IMAGE GENERATION:
+      tab: APPS
+      icon: /icons/img.png
+      style: row
+      columns: 5
+    MEDIA:
+      tab: MEDIA
+      #header: false
+      icon: /icons/med.png
+      style: row
+      columns: 3
+      useEqualHeights: true
+    MEDIA INFO:
+      tab: MEDIA
+      #header: false
+      icon: /icons/mov.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+    PALMA:
+      tab: DOMOTICA
+      icon: /icons/ha.png
+      style: row
+      columns: 4
+    LA ENVIA:
+      tab: DOMOTICA
+      icon: /icons/ha.png
+      style: row
+      columns: 4
+    SOL:
+      tab: DOMOTICA
+      icon: /icons/ha.png
+      style: row
+      columns: 4
+    V87:
+      tab: DOMOTICA
+      icon: /icons/ha.png
+      style: row
+      columns: 4
+    RUBEN:
+      tab: DOMOTICA
+      icon: /icons/ha.png
+      style: row
+      columns: 4
+
+    SHOP:
+      tab: SHOP
+      icon: /icons/buy.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+    SERVICES:
+      tab: SHOP
+      icon: /icons/buy.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+    PROVIDER:
+      tab: SHOP
+      icon: /icons/buy.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+    SELLER:
+      tab: SHOP
+      icon: /icons/sell.png
+      style: row
+      columns: 5
+      useEqualHeights: true
+
+    ICAI: 
+      tab: EDU
+      icon: /icons/edu.png
+      style: row
+      columns: 3
+    EXPRESION GRAFICA:
+      tab: EDU
+      icon: /icons/edu.png
+      style: row
+      columns: 3
+    MASTER:
+      tab: EDU
+      icon: /icons/edu.png
+      style: row
+      columns: 3
+
+    BANCOS:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 5
+    HACIENDA:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 4
+    CASA:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 4
+    COAM:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 5
+    VARIOS:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 4
+    SALUD:
+      tab: FER
+      icon: /icons/edu.png
+      style: row
+      columns: 4
+
+    main:
+      header: false
+      #fivecolumns: true 
+      style: row
+      columns: 8
+      useEqualHeights: true
+      
+    #Service Group on every Tab:
+      #style: columns
+      #columns: 5
+      #fiveColumns: true
+
+#showStats: true
+
