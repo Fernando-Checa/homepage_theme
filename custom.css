@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Oswald Regular";
+    src: url('/images/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Doto Medium";
+    src: url('/images/Doto-Medium.ttf') format('truetype');
+}
+
+@media(min-width: 500px) {
+    .services-list.flex.flex-col {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .services-list.flex.flex-col .service {
+        grid-column: span 1;
+    }
+    
+    .services-list.flex.flex-col .service > div {
+        height: 100%;
+    }
+    
+    .services-list.flex.flex-col .service > .mb-2 {
+        margin-bottom: 0 !important;
+    }
+    
+    .services-list.flex.flex-col #col-small.service {
+        grid-column: span 1;
+    }
+	.services-list.flex.flex-col #col-med {
+        grid-column: span 1;
+    }
+}
+
+/* services separator */
+
+#sep2 {
+    grid-column: 1 / -1;
+    pointer-events: none;
+    height: 20px;
+    opacity: 0;
+}
+
+/* TABS */
+
+#tabs > ul * > button {
+    font-family: "Oswald Regular";
+}
+
+#myTab {
+    border-radius: 25px !important;
+}
+
+#myTab > li:first-child > button{
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+}
+
+#myTab > li:last-child  > button{
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+}
+
+.layout-groups {
+    margin-top: 0;
+}
+
+/* FOOTER */
+#footer {
+    padding-top: 0;
+    position: relative;
+    top: -15px;
+}
+
+
+
+/* SERVICES  */
+
+.services-group {
+	margin-top: 15px !important; 
+
+    background-color: #182231;
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+    padding-top: 11px !important;
+    border-radius: 28px !important;
+
+    padding-bottom: 11px !important;
+ /*   
+    border-style: dotted;
+    border-top-width: 1px;
+    border-top-color: #3d4f69;
+    padding-top: 8px;
+    */
+}
+ /*
+.services-list {
+   margin-top: .4rem !important;
+}*/
+
+.service-group-icon {
+    margin-left: 4px;
+    margin-top: 1px;
+    width: 1.12rem !important;
+    height: 1.12rem !important;
+
+    opacity: .5;
+}
+
+.service > div {
+    margin-bottom: 0;
+    margin-top: 8px
+}
+
+.services-list {
+    margin-top: 3px !important;
+}
+
+.service-block {
+    border-radius: 15px !important;
+    background-color: rgb(var(--color-900) / .3) !important;
+}
+
+/* 8 columns */
+
+
+.services-list.lg\:grid-cols-8{
+    top: -6px;
+    position: relative;
+}
+
+.services-list.lg\:grid-cols-8 > :nth-child(8n+1)  > div:first-child  {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.services-list.lg\:grid-cols-8 :nth-child(8n) > div:first-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* 5 columns */
+.services-list.lg\:grid-cols-5 > :nth-child(5n+1)  > div:first-child  {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.services-list.lg\:grid-cols-5 :nth-child(5n) > div:first-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* 4 columns */
+.services-list.lg\:grid-cols-4 > :nth-child(4n+1) > div:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.services-list.lg\:grid-cols-4 :nth-child(4n) > div:first-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* 3 columns */
+.services-list.lg\:grid-cols-3 > :nth-child(3n+1) > div:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.services-list.lg\:grid-cols-3 :nth-child(3n) > div:first-child {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.service-tags {
+    margin-right: 2em !important;
+}
+
+.services-group > button {
+    /*border-bottom-color: #3d4f69;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;*/
+    background-color: #344458;
+    border-radius: 25px;
+    padding-bottom: 1px;
+    height: 25px;
+
+    /*opacity: 0.8;*/
+    background-size: 8px 8px;
+    background-image: repeating-linear-gradient(223deg, #445769 0, #516686 1px, #454b61 0, #424a60 50%);
+
+    
+/*
+    border-top-color: #3d4f69;
+    border-top-width: 1px;
+    border-top-style: dotted;*/
+}
+
+.services-group > button > h2 {
+    padding-bottom: 0;
+    padding-left: 10px;
+    font-weight: 900;
+    /*color: #1e2a3b !important;*/
+    color: #202b36 !important;
+    position: relative;
+    font-size: 35px;
+
+    
+}
+
+/* bookmarks */
+
+#bookmarks {
+    background-color: #14222a;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 30px -3px inset, rgba(0, 0, 0, 0.2) -3px -3px 30px -3px inset;
+}
+
+.bookmark > a {
+    border-radius: 20px !important;
+
+    
+}
+
+.bookmark-group-name {
+    font-family: "Doto Medium";
+    padding-bottom: 0;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #0e1514 !important;
+    margin-left:auto;
+    left: 10px;
+    position: relative;
+    padding: 0;
+}
+
+.bookmark-group > button {
+    background-color: #47645f;
+    border-radius: 25px;
+    height: 1.2em;
+ /*
+    opacity: 1;
+    background-size: 8px 8px;
+    background-image: repeating-linear-gradient(223deg, #446962 0, #51867e 1px, #45615f 0, #425c60 50%);
+
+   padding-bottom: 1px;*/
+}
+/*
+.bookmark-group > button > h2 {
+    
+}
+*/
+
+.bookmark-list {
+    background-color: #111;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.bookmark-icon{
+    border-color: #233037;
+    border-style: double;
+    border-width: 2px;
+    border-radius: 20px !important;
+}
+
+[data-name = "sep1"]{
+    
+    height: 15px;
+    pointer-events: none;
+    border-style: dashed;
+    border-top-width: 1px;
+    border-top-color: #3d4f69;
+    margin: 0 20px 0 20px;
+}
+
+[data-name = "sep1"] > a {
+    opacity: 0;
+}
+
+.dark\:bg-theme-900\/50:is(.dark *) {
+    background-color: rgb(var(--color-900) / .7) !important;
+}
+
+
+/* site monitor*/
+
+.site-monitor-status {
+    /*border-bottom-right-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;*/
+    height: 16px !important;
+    border-radius: unset;
+    padding: 4px 3px 0 3px !important;
+    right: -20px;
+    position: relative;
+}
+
+.site-monitor-status > .px-1\.5 {
+    right: 0;
+} 
